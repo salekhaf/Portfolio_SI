@@ -1,0 +1,151 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 30px;
+    background: #2c3e50;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* Menu */
+nav {
+    background: #34495e;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu > li > a:hover {
+    background: #2c3e50;
+}
+
+/* Sous-menu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #34495e;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background: #2c3e50;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+section {
+    margin: 40px 0;
+}
+
+/* Pied de page fixé en bas */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Section documents */
+.documents-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligné à gauche */
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 15%; /* un peu de marge à gauche */
+}
+
+.document {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ecf0f1;
+    padding: 8px 15px;
+    border-radius: 8px;
+    width: 70%;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 0.9em; /* texte plus petit */
+}
+
+.document:hover {
+    background: #dce2e5;
+    transform: scale(1.02);
+}
+
+.document .icon {
+    width: 20px;  /* icône plus petite */
+    height: 20px;
+}
+
+.document a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.document a:hover {
+    color: #2980b9;
+}

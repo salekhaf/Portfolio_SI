@@ -1,0 +1,25 @@
+1. Analyse des besoins
+
+L'analyse des besoins constitue la première étape essentielle dans la conception d'un système d'information. Elle produit plusieurs livrables fondamentaux : le cahier des charges, l'étude d'opportunité, l'expression des besoins et le modèle métier. Ces documents permettent de formaliser précisément ce que l'organisation attend du système d'information. Ils servent à clarifier les objectifs, les contraintes et les acteurs concernés par le projet. En définitive, ces livrables établissent une référence commune entre le client et l'équipe projet, garantissant une compréhension partagée des enjeux et des attentes dès le départ.
+
+2. Conception
+
+La phase de conception transforme les besoins identifiés en une solution concrète et cohérente. Elle génère des livrables techniques variés : modèles de données, diagrammes UML, maquettes d'écran, ainsi que les spécifications fonctionnelles et techniques. Ces documents facilitent la compréhension du fonctionnement futur du système par tous les intervenants. Ils servent également de base solide à la réalisation, en guidant les développeurs dans leur travail et en assurant la cohérence de l'ensemble de la solution.
+
+3. Réalisation (développement et intégration)
+
+La phase de réalisation consiste à construire le système conformément aux spécifications établies. Elle produit des livrables techniques essentiels : le code source, les scripts d'installation, la documentation technique et les manuels développeurs. Ces éléments garantissent la maintenabilité et la traçabilité du code, facilitant ainsi les interventions futures. Ils préparent également les évolutions à venir en fournissant une base documentée et structurée sur laquelle s'appuyer.
+
+4. Tests et validation
+
+Les tests et la validation permettent de vérifier que le système fonctionne correctement et répond aux besoins exprimés initialement. Cette phase produit plusieurs livrables : les plans de test, les rapports de test, le cahier de recette et les procès-verbaux de validation. Ces documents servent à identifier et corriger les anomalies avant la mise en production, assurant ainsi la qualité et la fiabilité du système avant sa mise à disposition des utilisateurs finaux.
+
+5. Mise en production et exploitation
+
+La mise en production et l'exploitation nécessitent des livrables orientés utilisateurs et opérationnels : manuels utilisateurs, procédures d'exploitation, dossier d'exploitation et guide d'installation. Ces documents facilitent la prise en main par les utilisateurs finaux, leur permettant de s'approprier rapidement le nouveau système. Ils assurent également une exploitation fiable et sécurisée du système d'information, en fournissant toutes les informations nécessaires au bon fonctionnement quotidien.
+
+6. Maintenance et évolution
+
+La maintenance et l'évolution du système d'information s'appuient sur des livrables de suivi : rapports de maintenance, documentation mise à jour et demandes de changement. Ces documents permettent de suivre les évolutions du système au fil du temps. Ils préservent la cohérence entre la documentation et la solution réelle, garantissant que les informations restent à jour et reflètent fidèlement l'état actuel du système.
+
+

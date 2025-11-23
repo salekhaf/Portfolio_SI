@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaporama de Soutenance - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rubrique-page">
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropdown-toggle">Découvrir ▼</button>
+            <ul class="submenu">
+                <li><a href="travaux.html">Rubrique 1 : Mes Travaux</a></li>
+                <li><a href="notes.html">Rubrique 2 : Mes Notes de cours</a></li>
+                <li><a href="certifications.html">Rubrique 3 : Mes Certifications</a></li>
+                <li><a href="projet_final.html">Rubrique 4 : Projet Final</a></li>
+                <li><a href="diaporama.html">Rubrique 5 : Diaporama de Soutenance</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="rubrique-content">
+        <div class="rubrique-hero">
+            <h1>Diaporama de Soutenance</h1>
+            <p>L'espace où sera partagé le support final de présentation.</p>
+        </div>
+
+        <section style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px;">
+                <iframe loading="lazy"
+                    src="https://www.canva.com/design/DAG5gSnfC78/K8obz5IyRmwnClAVl70rfw/view?embed"
+                    allowfullscreen
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                </iframe>
+            </div>
+
+            <p style="text-align: center; color: rgba(255,255,255,0.9); margin-top: 20px;">
+                <a href="https://www.canva.com/design/DAG5gSnfC78/K8obz5IyRmwnClAVl70rfw/view?utm_content=DAG5gSnfC78&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                   target="_blank" rel="noopener"
+                   style="color: #ffffff; text-decoration: underline;">
+                    Présentation projet SI
+                </a>
+                — par Salekha Fall et Jorys Kancel
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Mon Portfolio | Réalisé par Salekha</p>
+    </footer>
+
+    <script>
+        const dropdown = document.querySelector('.dropdown');
+        const toggleBtn = document.querySelector('.dropdown-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target) && dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>
+
+

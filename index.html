@@ -6,38 +6,39 @@
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <h2>Accueil</h2>
-    </header>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Sommaire ▼</a>
-                <ul class="submenu">
-                    <li><a href="presentation.html">Présentation</a></li>
-                    <li><a href="travaux.html">Rubrique 1 : Mes Travaux</a></li>
-                    <li><a href="notes.html">Rubrique 2 : Mes Notes de cours</a></li>
-                    <li><a href="systeme_info.html">Rubrique 3 : Documents d’un Système d’Information</a></li>
-                    <li><a href="certifications.html">Rubrique 4 : Mes Certifications</a></li>
-                    <li><a href="projet_final.html">Rubrique 5 : Projet Final</a></li>
-                    <li><a href="diaporama.html">Rubrique 6 : Diaporama de Soutenance</a></li>
-                    <li><a href="autres_ressources.html">Rubrique 7 : Autres Ressources</a></li>
-                </ul>
-            </li>
-        </ul>
+<body class="home-page">
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropdown-toggle">Découvrir ▼</button>
+            <ul class="submenu">
+                <li><a href="travaux.html">Rubrique 1 : Mes Travaux</a></li>
+                <li><a href="notes.html">Rubrique 2 : Mes Notes de cours</a></li>
+                <li><a href="certifications.html">Rubrique 3 : Mes Certifications</a></li>
+                <li><a href="projet_final.html">Rubrique 4 : Projet Final</a></li>
+                <li><a href="diaporama.html">Rubrique 5 : Diaporama de Soutenance</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="presentation">
-            <h3>Bienvenue</h3>
-            <p>Bienvenue sur mon portfolio. Vous pouvez naviguer à travers les différentes rubriques via le menu "Sommaire".</p>
-        </section>
-    </main>
+    <main></main>
 
     <footer>
         <p>© 2025 - Mon Portfolio | Réalisé par Salekha</p>
     </footer>
+
+    <script>
+        const dropdown = document.querySelector('.dropdown');
+        const toggleBtn = document.querySelector('.dropdown-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target) && dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+            }
+        });
+    </script>
 </body>
 </html>

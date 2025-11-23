@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Certifications - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rubrique-page">
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropdown-toggle">Découvrir ▼</button>
+            <ul class="submenu">
+                <li><a href="travaux.html">Rubrique 1 : Mes Travaux</a></li>
+                <li><a href="notes.html">Rubrique 2 : Mes Notes de cours</a></li>
+                <li><a href="certifications.html">Rubrique 3 : Mes Certifications</a></li>
+                <li><a href="projet_final.html">Rubrique 4 : Projet Final</a></li>
+                <li><a href="diaporama.html">Rubrique 5 : Diaporama de Soutenance</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="rubrique-content">
+        <div class="rubrique-hero">
+            <h1>Mes Certifications</h1>
+            <p>Un espace dédié aux badges, attestations et validations obtenus.</p>
+        </div>
+
+        <section style="max-width: 900px; margin: 0 auto;">
+            <article class="seance-card">
+                <div class="documents-list">
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/certification-pix-2022.pdf" target="_blank">Certification PIX 2022 (PDF)</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Mon Portfolio | Réalisé par Salekha</p>
+    </footer>
+
+    <script>
+        const dropdown = document.querySelector('.dropdown');
+        const toggleBtn = document.querySelector('.dropdown-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target) && dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

@@ -6,45 +6,79 @@
     <title>Mes Notes de cours - Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <h2>Rubrique 2 : Mes Notes de cours</h2>
-    </header>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Sommaire ▼</a>
-                <ul class="submenu">
-                    <li><a href="presentation.html">Présentation</a></li>
-                    <li><a href="travaux.html">Rubrique 1 : Mes Travaux</a></li>
-                    <li><a href="notes.html">Rubrique 2 : Mes Notes de cours</a></li>
-                    <li><a href="systeme_info.html">Rubrique 3 : Documents d’un Système d’Information</a></li>
-                    <li><a href="certifications.html">Rubrique 4 : Mes Certifications</a></li>
-                    <li><a href="projet_final.html">Rubrique 5 : Projet Final</a></li>
-                    <li><a href="diaporama.html">Rubrique 6 : Diaporama de Soutenance</a></li>
-                    <li><a href="autres_ressources.html">Rubrique 7 : Autres Ressources</a></li>
-                </ul>
-            </li>
-        </ul>
+<body class="rubrique-page">
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropdown-toggle">Découvrir ▼</button>
+            <ul class="submenu">
+                <li><a href="travaux.html">Rubrique 1 : Mes Travaux</a></li>
+                <li><a href="notes.html">Rubrique 2 : Mes Notes de cours</a></li>
+                <li><a href="certifications.html">Rubrique 3 : Mes Certifications</a></li>
+                <li><a href="projet_final.html">Rubrique 4 : Projet Final</a></li>
+                <li><a href="diaporama.html">Rubrique 5 : Diaporama de Soutenance</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="notes">
-            <h3>Mes Notes de cours</h3>
-            <p>Voici quelques supports de cours et prises de notes :</p>
+    <main class="rubrique-content">
+        <div class="rubrique-hero">
+            <h1>Mes Notes de cours</h1>
+            <p>Tous les supports de cours, synthèses et fiches de révision.</p>
+        </div>
 
-            <div class="documents-list">
-                <div class="document">
-                    <img src="img/pdf-icon.png" alt="PDF" class="icon">
-                    <a href="documents/CM1_prise_de_notes.pdf" target="_blank">CM1 - Prise de notes (PDF)</a>
+        <section style="max-width: 900px; margin: 0 auto;">
+            <article class="seance-card">
+                <div class="documents-list">
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/TD1_prise_de_notes.pdf" target="_blank">Notes du TD1 (PDF)</a>
+                    </div>
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/Odoo_présentation_note.pdf" target="_blank">Présentation de Odoo (PDF)</a>
+                    </div>
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/SI-Cours2-processus-gestion.pdf" target="_blank">Processus de gestion et de modélisation (PDF)</a>
+                    </div>
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/Cours-3-leslivrables.pdf" target="_blank">Les livrables (PDF)</a>
+                    </div>
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/Cours3-diagramme-de-cas-d'utilisation.pdf" target="_blank">Diagramme de cas d'utilisation (PDF)</a>
+                    </div>
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/Cours-gestion-de-projet.pdf" target="_blank">Cours - Gestion de projet (PDF)</a>
+                    </div>
+                    <div class="document">
+                        <img src="img/pdf-icon.png" alt="PDF" class="icon">
+                        <a href="documents/Systèmes d'information CM1_notes.pdf" target="_blank">Synthèse CM1 - Systèmes d'information (PDF)</a>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 
     <footer>
         <p>© 2025 - Mon Portfolio | Réalisé par Salekha</p>
     </footer>
+
+    <script>
+        const dropdown = document.querySelector('.dropdown');
+        const toggleBtn = document.querySelector('.dropdown-toggle');
+
+        toggleBtn.addEventListener('click', () => {
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target) && dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+            }
+        });
+    </script>
 </body>
 </html>
